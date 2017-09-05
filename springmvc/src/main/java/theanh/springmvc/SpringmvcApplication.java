@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import java.util.Arrays;
 
 @SpringBootApplication
-@ComponentScan
+@ComponentScan({"theanh.springmvc.controllers"})
 public class SpringmvcApplication {
 
     public static void main(String[] args) {
