@@ -6,11 +6,11 @@ import theanh.springmvc.services.NotificationService;
 
 @RestController
 public class PageController {
-    private NotificationService notificationService;
-
-    public PageController(){
-        notificationService = new NotificationService();
-    }
+//    private NotificationService notificationService;
+//
+//    public PageController(){
+//        notificationService = new NotificationService();
+//    }
 
     @RequestMapping("/")
     public String home(){

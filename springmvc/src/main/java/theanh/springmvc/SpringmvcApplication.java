@@ -10,7 +10,7 @@ import theanh.springmvc.entities.User;
 import java.util.Arrays;
 
 @SpringBootApplication
-@ComponentScan({"theanh.springmvc.controllers", "theanh.springmvc.services"})
+//@ComponentScan({"theanh.springmvc.controllers", "theanh.springmvc.services"})
 public class SpringmvcApplication {
 
     @Bean
