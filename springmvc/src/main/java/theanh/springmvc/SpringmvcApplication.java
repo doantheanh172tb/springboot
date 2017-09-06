@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import theanh.springmvc.configs.GlobalConfig;
+import theanh.springmvc.configs.MyAppConfig;
 import theanh.springmvc.entities.User;
 
 import java.util.Arrays;
@@ -29,5 +31,12 @@ public class SpringmvcApplication {
 
         System.out.println(ctx.getBean("user").toString());
         System.out.println(ctx.getBean("userNotificationService").toString());
+
+        MyAppConfig myAppConfig = (MyAppConfig) ctx.getBean("myAppConfig");
+        System.out.println(myAppConfig.toString());
+
+        GlobalConfig globalConfig = (GlobalConfig) ctx.getBean("globalConfig");
+        System.out.println(globalConfig.getTimestamp());
+        System.out.println(globalConfig.getTimestamp());
     }
 }
