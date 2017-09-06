@@ -36,6 +36,8 @@ public class SpringmvcApplication {
         System.out.println(myAppConfig.toString());
 
         GlobalConfig globalConfig = (GlobalConfig) ctx.getBean("globalConfig");
-        System.out.println("SpringmvcApplication--::" + globalConfig.getTimestamp());
+        System.out.println("SpringmvcApplication--globalConfig.getTimestamp::" + globalConfig.getTimestamp());
+
+        System.out.println("SpringmvcApplication--datasource::" + ctx.getBean("datasource").toString());
     }
 }
