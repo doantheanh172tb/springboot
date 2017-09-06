@@ -1,12 +1,12 @@
-package theanh.webapp;
+package theanh.weapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebappApplication {
+public class WeappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebappApplication.class, args);
+		SpringApplication.run(WeappApplication.class, args);
 	}
 }
